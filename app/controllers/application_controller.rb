@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     if session[:username]
       render :hello
     else
-      redirect_to '/sessions/new'
+      redirect_to 'sessions/new'
     end
   end
 end
